@@ -1,0 +1,22 @@
+<div class="container">
+    <legend>Create Client</legend>
+    <form>
+        <div class="mb-3">
+            <label for="txtNom" class="form-label">Nom</label>
+            <input type="text" name="nom" [(ngModel)]="formdata.nom" class="form-control" id="txtNom" />
+        </div>
+        <div class="mb-3">
+            <label for="txtPrenom" class="form-label">Prenom</label>
+            <input type="text" name="prenom" [(ngModel)]="formdata.prenom" class="form-control" id="txtPrenom" />
+        </div>
+        <div class="mb-3">
+            <label for="txtDate" class="form-label">Date de visite</label>
+            <input type="date" name="date" [(ngModel)]="formdata.date" class="form-control" id="txtDate" />
+        </div>
+        <div class="mb-3">
+            <label for="txtVille" class="form-label">Adresse</label>
+            <input type="text" name="ville" [(ngModel)]="formdata.ville" class="form-control" id="txtVille" />
+        </div>
+        <button type="button" (click)="create()" class="btn btn-primary">Enregistrer</button>
+    </form>
+</div>

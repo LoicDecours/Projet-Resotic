@@ -1,0 +1,27 @@
+<div class="container">
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">id</th>
+                <th scope="col">Nom</th>
+                <th scope="col">Prénom</th>
+                <th scope="col">Date</th>
+                <th scope="col">Ville</th>
+                <th scope="col">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let client of allclients">
+                <td>{{client.id}}</td>
+                <td>{{client.nom}}</td>
+                <td>{{client.prenom}}</td>
+                <td>{{client.date}}</td>
+                <td>{{client.ville}}</td>
+                <td>
+                    <a href="" class="btn btn-primary" [routerLink]="['/client/edit', client.id]" >Editer</a>
+                    <button type="button" (click)="deleteItem(client.id)" class="btn btn-danger ms-2">Supprimer</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,25 @@
+{
+  "clients": [
+    {
+      "id": 1,
+      "nom": "Dubois",
+      "prenom": "Marie",
+      "date": "2023-12-15",
+      "ville": "Paris"
+    },
+    {
+      "id": 2,
+      "nom": "Leroux",
+      "prenom": "Sophie",
+      "date": "2023-11-12",
+      "ville": "Toulouse"
+    },
+    {
+      "id": 3,
+      "nom": "Dupont",
+      "prenom": "Jean",
+      "date": "2024-01-12",
+      "ville": "Lyon"
+    }
+  ]
+}
