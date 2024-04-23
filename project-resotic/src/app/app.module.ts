@@ -12,8 +12,8 @@ import { MapComponent } from './map/map.component';
 
 @NgModule({
   declarations: [
-    //Ajouter le MapComponent si besoin de la map
-    AppComponent    
+    AppComponent,
+    MapComponent
   ],
   imports: [
     BrowserModule,
